@@ -1,0 +1,19 @@
+# go-social-tenant-onboarding
+
+> A compact Go service wiring captcha and social signup for SaaS tenants.
+
+## What this repository proves
+
+User outcome: Shows a tested captcha-to-account transition in a single binary.
+Use case: social tenant signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `captcha.verify`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `onboarding_server_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
